@@ -38,6 +38,7 @@ buttons.forEach(button => {
             try {
                 // Avaliar a expressão e mostrar o resultado
                 display.value = eval(expressao);
+                expressao = '';
             } catch (error) {
                 display.value = 'Erro'; // Em caso de erro
             }

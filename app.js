@@ -2,17 +2,21 @@
 function apagarDigito() {
     // Verificar se há algo no display
     if (display.value.length > 0) {
-        // Remover o último caractere do display e da expressão
+        // Remover o último caractere do display
         display.value = display.value.slice(0, -1);
-        // Também remove o último caractere da expressão
-        expressao = expressao.slice(0, -1); 
+        
+        // Também remove o último caractere da expressão, se houver
+        if (expressao.length > 0) {
+            expressao = expressao.slice(0, -1); 
+        }
 
         // Se a expressão estiver vazia após apagar, limpa completamente o display
         if (expressao === '') {
             display.value = ''; // Limpa o display
         }
-    }
+    } 
 }
+
 
 //FUNÇÕES PARA AS OPERAÇÕES
 function raizQuadrada() {
