@@ -26,39 +26,12 @@ buttons.forEach(button => {
 
         //raiz quadrada
         else if (value === '√') {
-            //verifica se o display contém um número válido
-            if (display.value) {
-            //converte para número
-            const num = parseFloat(display.value); 
-
-                if (!isNaN(num)) {
-                    //calcula a raiz quadrada
-                    const resultado = Math.sqrt(num).toFixed(4); 
-                    //exibe o resultado
-                    display.value = resultado;
-
-                    //atualiza a expressão
-                    expressao = resultado.toString(); 
-                } else {
-                    display.value = 'Erro'; 
-                }
-            }
+            raizQuadrada();
         }
 
         //porcentagem
         else if (value === '%') {
-            //converte para número
-            const num = parseFloat(display.value);
-
-            if(!isNaN(num)) {
-                //calcula
-                const resultado = num /100;
-                //exibe
-                display.value = resultado;
-                expressao = resultado.toString();
-            } else {
-                display.value = 'Erro';
-            }
+            porcentagem();
         }
 
         //avalia a expressão e mostra o resultado
