@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -99,3 +100,105 @@ body {
     color: white;
     
 }
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*evitar que o padding acrescente valor*/
+}
+
+body {
+    background-color: #CDFADB;
+}
+
+.calculadora {
+    width: 250px;
+    height: 400%;
+    padding: 10px;
+    margin: 70px auto;
+
+    /*estilização da calculadora*/
+    border: 2px solid #FF204E;
+    border-radius: 40px;
+    background-color: #FF204E;
+
+    /* Adiciona sombra a calculadora */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/*MONITOR DA CALCULADORA*/
+.monitor-input {
+    margin: 20px;
+    height: 60px;
+
+    /*estilização do monitos*/
+    border-radius: 5px;
+    border: 2px solid #FF204E;
+    background-color: #D8D2C2;
+}
+
+.display {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+    /*evitar que os numeros fiquem colados*/
+    padding: 10px;
+
+    /*TIRANDO DEFINIÇÕES*/
+    border: none;
+    outline: none;
+
+    /*FONTE*/
+    font-family: "Spicy Rice", serif;
+    font-size: 20px;
+
+    /* Aumenta o espaçamento entre os números */
+    letter-spacing: 2px;
+}
+
+/*BOTÃO DA CALCULADORA*/
+.btn {
+    width: 40px; /*Largura do Botão*/
+    height: 40px; /*Altura do Botão*/
+    border-radius: 50px;
+    margin: 2px;
+
+    /*estilização dos botões*/
+    color: #00224D;
+    background-color: #FFEBB2;
+    border: 2px solid #FFEBB2;
+
+    /*Fonte*/
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+
+    /* Muda o cursor para "mãozinha" ao passar o mouse */
+    cursor: pointer;
+
+    /* Adiciona sombra ao botão */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+    /* Transição suave de cor */
+    transition: background-color 0.4s ease;
+
+}
+
+.btn:hover {
+    background-color: #E59BE9;
+    border: 2px solid #E59BE9;
+}
+
+.botoes {
+    margin: 18px; /*Deixou eles afastados*/
+} 
+
+.num {
+    background-color: #910A67;
+    border: 2px solid #910A67;
+    color: white;
+    
+}
+>>>>>>> 277830d (Commit inicial)
